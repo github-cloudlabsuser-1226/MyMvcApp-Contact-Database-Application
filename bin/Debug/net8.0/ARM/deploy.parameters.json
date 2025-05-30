@@ -1,0 +1,18 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "subscriptionId": {
+            "value": "a89603bc-f80e-41f1-9df4-6d6f5377e886"
+        },
+        "siteName": {
+            "value": "my-mvc-app"
+        },
+        "hostingPlanName": {
+            "value": "my-mvc-app-plan"
+        },
+        "location": {
+            "value": "westeurope"
+        }
+    }
+}

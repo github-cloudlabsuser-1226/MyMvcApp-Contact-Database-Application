@@ -1,0 +1,14 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "sites_my_app_lena_name": {
+            "defaultValue": "my-app-lena",
+            "type": "String"
+        },
+        "serverfarms_ASP_GitHubCopilotChallenges_9ba1_externalid": {
+            "defaultValue": "/subscriptions/a89603bc-f80e-41f1-9df4-6d6f5377e886/resourceGroups/GitHub-Copilot-Challenges/providers/Microsoft.Web/serverfarms/ASP-GitHubCopilotChallenges-9ba1",
+            "type": "String"
+        }
+    }
+}
