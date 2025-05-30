@@ -15,6 +15,16 @@ public class UserController : Controller
         return View(userlist);
     }
 
+    // GET: User/Search
+    public ActionResult Search(string searchString)
+    {
+        var filteredUsers = string.IsNullOrEmpty(searchString) 
+            ? userlist 
+            : userlist.Where(u => u.Name.Contains(searchString) || u.Email.Contains(searchString)).ToList();
+        return View("Index", filteredUsers);
+    }
+
+
     // GET: User/Details/5
     public ActionResult Details(int id)
     {
